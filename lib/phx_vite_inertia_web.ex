@@ -24,6 +24,7 @@ defmodule PhxViteInertiaWeb do
       import Plug.Conn
       import PhxViteInertiaWeb.Gettext
       alias PhxViteInertiaWeb.Router.Helpers, as: Routes
+      import PhxInertia.Controller
     end
   end
 

@@ -8,7 +8,10 @@
 import Config
 
 config :phx_vite_inertia,
-  ecto_repos: [PhxViteInertia.Repo]
+  ecto_repos: [PhxViteInertia.Repo],
+  # Configures inertia.js
+  assets_version: 1, # TODO figure out how to change this, default 1
+  inertia_layout: "app.html" # default app.html
 
 # Configures the endpoint
 config :phx_vite_inertia, PhxViteInertiaWeb.Endpoint,

@@ -1,0 +1,15 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_INIT_ARG",
+    "hint": "Maybe you wanted to run \"pnpm create vue@latest\"",
+    "err": {
+      "name": "pnpm",
+      "message": "init command does not accept any arguments",
+      "code": "ERR_PNPM_INIT_ARG",
+      "stack": "pnpm: init command does not accept any arguments\n    at Object.handler [as init] (/Users/mykolas/Library/pnpm/global/5/.pnpm/pnpm@7.1.6/node_modules/pnpm/dist/pnpm.cjs:180171:15)\n    at /Users/mykolas/Library/pnpm/global/5/.pnpm/pnpm@7.1.6/node_modules/pnpm/dist/pnpm.cjs:182685:51\n    at async run (/Users/mykolas/Library/pnpm/global/5/.pnpm/pnpm@7.1.6/node_modules/pnpm/dist/pnpm.cjs:182661:34)\n    at async runPnpm (/Users/mykolas/Library/pnpm/global/5/.pnpm/pnpm@7.1.6/node_modules/pnpm/dist/pnpm.cjs:182879:5)\n    at async /Users/mykolas/Library/pnpm/global/5/.pnpm/pnpm@7.1.6/node_modules/pnpm/dist/pnpm.cjs:182871:7"
+    }
+  }
+}

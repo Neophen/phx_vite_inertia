@@ -24,7 +24,12 @@ config :phx_vite_inertia, PhxViteInertiaWeb.Endpoint,
   code_reloader: true,
   debug_errors: true,
   secret_key_base: "nWEbEQRZMxPoXCyMowCLsBQLIw/bAqiyqOVYHhU4QG6U+53vg8/8j2x9KgDrJYiL",
-  watchers: []
+  watchers: [
+    node: [
+      "node_modules/vite/bin/vite.js",
+      cd: Path.expand("../assets", __DIR__)
+    ]
+  ]
 
 # ## SSL Support
 #
@@ -56,7 +61,9 @@ config :phx_vite_inertia, PhxViteInertiaWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/phx_vite_inertia_web/(live|views)/.*(ex)$",
+      ~r"lib/phx_vite_inertia_web/controllers/.*(ex)$",
+      ~r"lib/phx_vite_inertia_web/live/.*(ex)$",
+      ~r"lib/phx_vite_inertia_web/views/.*(ex)$",
       ~r"lib/phx_vite_inertia_web/templates/.*(eex)$"
     ]
   ]
