@@ -1,0 +1,12 @@
+{
+  "btn": {
+    "prefix": "btn",
+    "body": ["<XButton>$1</XButton>"],
+    "description": "creates XButton component"
+  },
+  "icon": {
+    "prefix": "icon",
+    "body": ["<XIcon icon=\"$1\" />$0"],
+    "description": "creates XIcon component"
+  },
+}

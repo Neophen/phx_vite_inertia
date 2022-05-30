@@ -32,7 +32,12 @@ export default defineConfig(({ command }: any) => {
 
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
-        imports: ['vue', 'vue/macros', '@vueuse/head', '@vueuse/core'],
+        imports: [
+          'vue',
+          'vue/macros',
+          '@vueuse/head',
+          '@vueuse/core',
+        ],
         dts: 'src/auto-imports.d.ts',
         dirs: ['src/composables', 'src/store'],
         vueTemplate: true,

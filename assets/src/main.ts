@@ -13,7 +13,6 @@ function resolvePageComponent(name: string, pages: Record<string, any>) {
 }
 
 createInertiaApp({
-  //   resolve: (name) => require(`./Pages/${name}`),
   resolve: name =>
     resolvePageComponent(name, import.meta.glob('./pages/**/*.vue')),
   setup({ el, app, props, plugin }) {

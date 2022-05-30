@@ -6,7 +6,9 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     XButton: typeof import('./components/XButton.vue')['default']
+    'XButton copy': typeof import('./components/XButton copy.vue')['default']
     XIcon: typeof import('./components/XIcon.vue')['default']
+    XLink: typeof import('./components/XLink.vue')['default']
   }
 }
 

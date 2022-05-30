@@ -1,9 +1,8 @@
 <script setup name="Home" lang="ts">
-interface Props {
-  hello: string
-}
-
-const props = defineProps<Props>()
+const { title, aboutPath } = defineProps<{
+  title: string
+  aboutPath: string
+}>()
 
 const { x, y, sourceType } = useCustomMouse()
 </script>
@@ -11,9 +10,14 @@ const { x, y, sourceType } = useCustomMouse()
 <template>
   <div>
     <div class="h-screen space-y-4 bg-slate-100 p-8">
-      <h1 class="text-3xl font-bold">
-        Phoenix, Vite, Vue, Inertia, Tailwind and extras
-      </h1>
+      <div class="flex gap-4">
+        <h1 class="text-3xl font-bold">
+          Phoenix, Vite, Vue, Inertia, Tailwind and extras
+        </h1>
+        <XLink :href="aboutPath">
+          About
+        </XLink>
+      </div>
       <div class="flex items-center gap-4">
         <XIcon icon="heroicons-outline:badge-check" size="2xl" />
         <p>Auto imported icons</p>
@@ -24,7 +28,7 @@ const { x, y, sourceType } = useCustomMouse()
       </div>
       <div class="flex items-center gap-4">
         <p class="font-bold">
-          {{ hello }}
+          {{ title }}
         </p>
         <p>Props come from phoenix</p>
       </div>

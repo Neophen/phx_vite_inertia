@@ -1,0 +1,56 @@
+{
+    "Vue 3 Typescript setup": {
+        "prefix": "vbase",
+        "body": [
+            "<script setup lang=\"ts\" name=\"$TM_FILENAME_BASE\">",
+            "$0",
+            "</script>",
+            "<template>",
+            "    <div>",
+            "    </div>",
+            "</template>",
+        ],
+        "description": "Creates a base vue component version"
+    },
+    "Add Ref": {
+        "prefix": "ref",
+        "body": [
+            "const $1 = \\$ref($0);"
+        ],
+        "description": "defines a ref"
+    },
+    "Add Computed": {
+        "prefix": "computed",
+        "body": [
+            "const $1 = \\$computed(() => {$0});"
+        ],
+        "description": "defines a computed"
+    },
+    "Define Props": {
+        "prefix": "props",
+        "body": [
+            "const {",
+            "   ${1:prop}: $0",
+            "} = defineProps<{",
+            "   ${1:prop}: ${2:string};",
+            "}>()"
+        ],
+        "description": "defines props with default values"
+    },
+    "Define Emit": {
+        "prefix": "emit",
+        "body": [
+            "const emit = defineEmits<{",
+            "   (event: '$1'): void;",
+            "}>();"
+        ],
+        "description": "defineEmits"
+    },
+    "Print to console": {
+        "prefix": "log",
+        "body": [
+            "console.log($0);",
+        ],
+        "description": "Log output to console"
+    }
+}
